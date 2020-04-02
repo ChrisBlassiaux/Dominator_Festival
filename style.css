@@ -1,0 +1,355 @@
+@font-face {
+    font-family: police;
+    src:url("fonts/MrGrieves-Regular.otf");
+    
+    
+}
+
+
+@font-face {
+    font-family: police1;
+    src:url("fonts/Aileron-Light.otf");
+    
+    
+}
+
+@font-face {
+    font-family: police2;
+    src:url("fonts/Bagnard.otf");
+    
+    
+}
+
+
+html, body {
+
+    margin: 0;
+    padding: 0;
+    font-family: police2;
+	
+
+}
+/* MODIFS KEY PRESS et info bulle */
+kbd {
+	font-family: police2;
+	
+}
+kbd:hover {
+	color:deepskyblue;
+	
+}
+
+.infobulle {
+  position: relative;  /* les .infobulle deviennent référents */
+  cursor: help;
+}
+
+/* on génère un élément :after lors du survol et du focus :*/
+
+.infobulle:hover::after,
+.infobulle:focus::after {
+  font-size: 15px;
+  content: attr(aria-label);  /* on affiche aria-label */
+  position: absolute;
+  top: -1.4em;
+  left: 50%;
+  transform: translateX(-50%); /* on centre horizontalement  */
+  z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+  white-space: nowrap;  /* on interdit le retour à la ligne */
+}
+/* */
+h1 {
+	color: white;
+	
+}
+
+/* Audio arrière plan*/
+#audioback {
+	width : 90%;
+	height: 30px;
+	display: ;
+	position: fixed;
+	top: 30px;
+	right: 5%;
+	left: 5%;
+}
+
+/*SECTION*/
+
+section {
+	width: 80%;
+	margin-left: 18%;
+	margin-right: 18%;
+	
+}
+
+.presentation {
+	margin: 40px ;
+	
+}
+/*section gauche*/
+.divleft{
+	width: 40%;
+    float: left;
+	margin-right: 40px;
+}
+
+h1 {text-align: center;
+
+}
+
+.logo { margin-right: 10%;
+		margin-left: 10%;
+
+
+}
+
+/*section droite*/
+.divright{
+	float: left;
+	width: 40%;
+	
+	margin-top: 65px;
+}
+
+.divright h2, h3 {
+	color: deepskyblue;  
+	 
+}
+
+.divright p { 
+	font-family: police1 ;
+	color: white;
+	line-height: 25px;
+}
+
+
+
+
+
+
+/*TOUCHES DOMINATOR*/
+.keys {
+
+
+  display: flex;
+    width: 100%;
+    
+}
+.key {
+	
+  
+  border-radius: 10px;
+  margin: 0 auto;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  transition: all .06s ease;
+  width: 40px;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  
+}
+.playing {
+	
+  transform: scale(1.3);
+  
+  
+}
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: deepskyblue ;
+}
+
+
+
+/* LINE UP */
+
+.lineuptitle { 
+	font-size: 30px;
+	color: white;
+	display: block;
+	
+	margin-top: 650px;
+	padding: 5px 0px;
+	text-align: center;
+	border-top: solid 1px white; 
+	
+	
+	
+	
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+	
+
+.linuptext {
+	color: white;
+	width: 80%;
+	font-family:sans-serif;
+	margin: 0px auto;
+	text-align: center;
+	
+}
+
+
+
+/*FOOTER */
+
+
+
+footer {
+	margin-bottom: -200px;
+
+
+}
+
+.imgfooter {
+	width: 100%;
+	
+
+}
+
+
+
+/*RESEAUX SOCIAUX*/
+
+.social {
+	position: absolute;
+
+	margin-top: 10%;
+
+	width: 60%;
+	margin-left: 25%;
+}
+
+.social img {
+	width: 5%;
+	margin: 5%;
+	
+}
+
+
+
+.social img:hover {
+	background-color: deepskyblue;
+	
+	
+} 
+
+
+
+/*RESPONSIVE*/
+
+/*PORTABLE*/
+@media screen and (max-width: 600px) {
+	
+	/*SECTION*/
+
+section {
+	width: 80%;
+	margin-left: 0%;
+	margin-right: 0%;
+	
+}
+
+.presentation {
+	margin: 0px ;
+	
+}
+/*section gauche*/
+.divleft{
+	width: 100%;
+    float: none;
+	
+}
+
+.keys {
+
+
+  display: flex;
+    width: 70%;
+	margin-left: 5%;
+    margin-right: 10%;
+}
+	
+h1 {text-align: center;
+	width: 125%;
+	
+}
+
+.logo { margin-right: 0%;
+		margin-left: 0%;
+	
+
+}
+
+/*section droite*/
+.divright{
+	float: none;
+	width: 100%;
+	margin-left: 20%;
+	margin-top: 65px;
+}
+
+.divright h2, h3 {
+	color: deepskyblue;  
+	 
+}
+	
+	
+	
+	.divright p {
+		display: none;
+	}
+	
+	
+
+	/* LINE UP */
+
+.lineuptitle { 
+	margin-top: 50px;
+	}
+	
+.linuptext {
+	
+
+}
+	
+	/*RESEAUX SOCIAUX*/
+.social {
+	position: absolute;
+
+	margin-top: 10%;
+
+	width: 80%;
+	margin-left: 15%;
+}
+
+.social img {
+	width: 5%;
+	margin: 5%;
+	
+}
+	
+	
+	
+}
+
+
+
+/*REGLEGES JAVASCRIPT*/
+
+Canvas {
+	position: fixed;
+	z-index: -1000;
+	top: 0;
+	left: 0;
+}
