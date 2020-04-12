@@ -13,7 +13,7 @@
 → Ce projet a été créé le 04/04/2020 pour le 5ème jour chez The Hacking Project. 
 
 ## :eyes:  Aperçu ?
-https://chrisblassiaux.github.io/solidarite-partage/
+https://chrisblassiaux.github.io/Dominator_Festival/
 
 ## :top:  Progression ?
 
